@@ -3,16 +3,23 @@ header {
   // overflow: hidden;
 
   .header_container {
-    text-align: center;
-    min-height: 570px;
+    min-height: 100%;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
 
-    // CV download
-    .cv {
-      margin-top: 2.5rem;
-      display: flex;
-      justify-content: center;
-      gap: 1.2rem;
+    .header_infor {
+      text-align: center;
+
+      // CV download
+      .cv {
+        margin-top: 2.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1.2rem;
+      }
     }
 
     // Social
@@ -44,18 +51,17 @@ header {
       background: linear-gradient(180deg, var(--color-primary), transparent);
       width: 22rem;
       height: 22rem;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-top: 2rem;
       border-radius: 50%;
       overflow: hidden;
+      position: relative;
+
       img {
         position: absolute;
-        top: -35px;
+        top: -1.1rem;
+        width: 18rem;
       }
     }
-    
+
     // Scroll down
     .scroll_down {
       position: absolute;
@@ -70,17 +76,56 @@ header {
 
 // Media device
 @media screen and (max-width: 1024px) {
+  header {
+    .header_container {
+      gap: 2rem;
 
+      .avatar {
+        width: 15rem;
+        height: 15rem;
+
+        img {
+          width: 12rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    .header_container {
+      flex-direction: column;
+      gap: 2rem;
+
+      .avatar {
+        width: 22rem;
+        height: 22rem;
+
+        img {
+          width: 18rem;
+        }
+      }
+    }
+
+    .container {
+      min-width: 90%;
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
   header {
+
     .header_socials,
     .scroll_down {
       display: none !important;
     }
+
     .header_container {
-      min-height: 530px;
+      flex-direction: column;
+      gap: 3rem;
+
       .avatar {
         width: 20rem;
         height: 20rem;

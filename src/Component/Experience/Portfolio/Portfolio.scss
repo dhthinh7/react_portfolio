@@ -1,0 +1,76 @@
+@import '../../../index.scss';
+
+#portfolio {
+  .portfolio_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+
+    .portfolio_item {
+      @include section_item;
+      border-radius: 1.5rem;
+      padding: 1rem;
+
+      .portfolio_item-image {
+        border-radius: 1.5rem;
+        overflow: hidden;
+      }
+
+      h3 {
+        color: var(--color-white);
+        margin: 1rem;
+      }
+
+      .portfolio_item_ref {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .not-share {
+        position: relative;
+        .btn {
+          cursor: not-allowed;
+          opacity: 0.4;
+        }
+
+        &::before {
+          content: "This project can not share";
+          position: absolute;
+          top: -1rem;
+          right: 0;
+          height: 2rem;
+          width: fit-content;
+          padding: 0.5rem 1rem;
+          z-index: 10;
+          background: var(--color-primary);
+          border-top-left-radius: 2rem;
+          border-bottom-right-radius: 2rem;
+          opacity: 0;
+          transition: all .5s ease-in-out;
+        }
+
+        &:hover::before {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+// Media device
+@media screen and (max-width: 1024px) {
+  #portfolio {
+    .portfolio_container {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #portfolio {
+    .portfolio_container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

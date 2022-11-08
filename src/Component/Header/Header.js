@@ -8,7 +8,7 @@ export default function Header() {
     <header>
       <div className="container header_container">
         <h5>Hello I'm</h5>
-        <h1>Thinh Doan</h1>
+        <h2>Thinh Doan</h2>
         <h5 className="text-light">Fontend developer</h5>
         <CV />
         <HeaderSocials />

@@ -1,0 +1,49 @@
+@import '../../index.scss';
+.skill_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  place-items: center;
+  &>div {
+    @include section_item;
+    
+    .skill_content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      .skill_detail {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        .skill_icon {
+          padding-right: 1rem;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// Media device
+@media screen and (max-width: 1024px) {
+  .skill_container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    &>div {
+      width: 80%;
+      padding: 2rem 3rem;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #skill {
+    .skill_container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+      &>div {
+        width: 100%;
+        padding: 2rem 3rem;
+      }
+    }
+  }
+}

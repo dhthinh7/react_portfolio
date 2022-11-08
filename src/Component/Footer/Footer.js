@@ -1,5 +1,5 @@
 import React from "react";
 
-export default function Footee() {
+export default function Footer() {
   return <div>Footee</div>;
 }

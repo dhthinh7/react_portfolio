@@ -5,7 +5,7 @@ import avatar from '../../Assets/images/avatar-removebg.png';
 import HeaderSocials from "./HeaderSocials";
 export default function Header() {
   return <>
-    <header>
+    <header id="header">
       <div className="container header_container">
         <div className="header_infor">
           <h5>Hello I'm</h5>

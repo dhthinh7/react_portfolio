@@ -1,0 +1,36 @@
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .6rem;
+  background: var(--color-light);
+  width: fit-content;
+  padding: .3rem .3rem;
+  border-radius: 2rem;
+  position: fixed;
+  z-index: 10;
+  bottom: .2rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  li {
+    text-align: center;
+    padding: 0.3rem;
+    border: 1px solid transparent;
+    background: var(--color-bg);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    transition: var(--transition);
+
+    a {
+      font-size: 1rem;
+      line-height: 1rem;
+    }
+
+    &:hover {
+      border-color: var(--color-primary-variant);
+      background: var(--color-white);
+    }
+  }
+}

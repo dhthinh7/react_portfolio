@@ -35,6 +35,16 @@ body {
   color: var(--color-bg);
   line-height: 1.7;
   background-image: url('./Assets/images/bg-texture.jpg');
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    color: var(--color-white);
+  }
 }
 
 code {
@@ -52,14 +62,6 @@ html {
   margin: 0 auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 500;
-  color: var(--color-white);
-}
 
 section {
   margin-top: 3rem;

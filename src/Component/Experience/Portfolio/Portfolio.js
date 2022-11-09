@@ -35,7 +35,7 @@ const portfolio_data = [
 export default function Portfolio() {
   const renderPortfolio = () => {
     return portfolio_data.map((item) => {
-      return <article className="portfolio_item">
+      return <article key={item.id} className="portfolio_item">
         <div className="portfolio_item-image">
           <img src={item.image} alt={item.title} />
         </div>

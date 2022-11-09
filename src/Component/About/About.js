@@ -5,7 +5,7 @@ import { FaAward } from 'react-icons/fa';
 import avatar_me from '../../Assets/images/avatar.png';
 import './About.scss'
 export default function About() {
-  return <section>
+  return <section id="about">
     <h5>Get to know</h5>
     <h2>About me</h2>
     <div className="container about_container">
@@ -32,7 +32,7 @@ export default function About() {
           </article>
         </div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, qui. Laborum accusantium tempore mollitia odit, pariatur provident libero inventore praesentium vitae, eos fuga magni similique reprehenderit iure numquam labore minima? Laborum accusantium tempore mollitia odit</p>
-        <div className="btn btn-primary">Let's talk</div>
+        <a href="#contact" className="btn btn-primary">Let's talk</a>
       </div>
     </div>
   </section>

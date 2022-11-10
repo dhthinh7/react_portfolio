@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillGithub, AiFillFacebook } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin, AiFillFacebook } from 'react-icons/ai';
 
 export default function HeaderSocials() {
   return <div className="header_socials">

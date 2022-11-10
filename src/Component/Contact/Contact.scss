@@ -48,6 +48,9 @@
         resize: vertical;
         color: white;
       }
+      textarea {
+        height: 10rem;
+      }
     }
   }
 }
@@ -76,13 +79,13 @@
         }
 
       }
-    }
-    
-    form {
-      gap: 1rem;
-      textarea {
-        height: 30%;
+      form {
+        gap: 1rem;
+        textarea {
+          height: 10rem;
+        }
       }
     }
+    
   }
 }

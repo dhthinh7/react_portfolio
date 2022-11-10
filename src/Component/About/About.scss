@@ -1,107 +1,145 @@
-.about_container {
-  display: grid;
-  grid-template-columns: 35% 50%;
-  gap: 4rem;
-  place-items: center;
+@import '../../index.scss';
+.about-margin-top {
+  margin-top: 0rem !important;
 
-  .about_me {
-    width: 100%;
-    height: fit-content;
+  .about_container {
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 4rem;
     place-items: center;
-    border-radius: 2rem;
-    background: linear-gradient(135deg, var(--color-primary), transparent);
 
-    .about_me-image {
-      border-radius: 2rem;
-      overflow: hidden;
-      transform: rotate(10deg);
-      transition: var(--transition);
-
-      &:hover {
-        transform: rotate(0deg);
-      }
-    }
-  }
-
-  .about_content {
-    .about_cards {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
+    .about_me {
+      width: 100%;
+      height: fit-content;
       place-items: center;
-      // margin-bottom: 2rem;
+      border-radius: 2rem;
+      background: linear-gradient(135deg, var(--color-primary), transparent);
 
-      .about_card {
-        background: var(--color-bg-variant);
-        border-radius: 1rem;
-        height: 100%;
-        width: 100%;
-        padding: 1.5rem;
-        text-align: center;
-        color: white;
-        border: 1px solid transparent;
+      .about_me-image {
+        border-radius: 2rem;
+        overflow: hidden;
+        transform: rotate(10deg);
         transition: var(--transition);
 
         &:hover {
-          background: transparent;
-          border-color: var(--color-primary-variant);
-        }
-
-        h5 {
-          font-size: 0.8rem;
-        }
-
-        small {
-          font-size: 0.7rem;
-          color: var(--color-light);
+          transform: rotate(0deg);
         }
       }
     }
 
-    p {
-      color: var(--color-light);
-      margin: 1rem 0;
+    .about_content {
+      width: 100%;
+      .about_cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        place-items: center;
+
+        .about_card {
+          background: var(--color-bg-variant);
+          border-radius: 1rem;
+          height: 100%;
+          width: 100%;
+          padding: 1.5rem;
+          text-align: center;
+          color: white;
+          border: 1px solid transparent;
+          transition: var(--transition);
+
+          &:hover {
+            background: transparent;
+            border-color: var(--color-primary-variant);
+          }
+
+          h5 {
+            font-size: 0.8rem;
+          }
+
+          small {
+            font-size: 0.7rem;
+            color: var(--color-light);
+          }
+        }
+      }
+
+      .skill_fontend  {
+        @include section_item;
+        margin-top: 1rem;
+        padding: 1rem 3rem;
+        margin-bottom: 1rem;
+        .skill_content {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          .skill_detail {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+  
+            .skill_icon {
+              padding-right: 1rem;
+              color: white;
+            }
+          }
+        }
+
+      }
+      a {
+        font-size: 1rem;
+        font-weight: 500;
+      }
     }
-  }
+    }
 }
 
 // Media device
 @media screen and (max-width: 1024px) {
-  .about_container {
-    grid-template-columns: 1fr;
-    gap: 0;
-    .about_me {
-      width: 50%;
-      margin: 0 auto 4rem auto;
-    }
-    .about_content {
-      .btn.btn-primary {
-        display: block;
-        margin: 0 auto;
+  .about-margin-top {
+    .about_container {
+      grid-template-columns: 1fr;
+      gap: 0;
+  
+      .about_me {
+        width: 50%;
+        margin: 0 auto 4rem auto;
+      }
+  
+      .about_content {
+        .btn.btn-primary {
+          display: block;
+          margin: 0 auto;
+        }
       }
     }
   }
 }
 
 @media screen and (max-width: 600px) {
-  .about_container {
-    .about_me {
-      width: 70%;
-      margin: 0 auto 4rem auto;
-    }
-
-    .about_content {
-      .about_cards {
-        grid-template-columns: 1fr 1fr;
+  .about-margin-top {
+    .about_container {
+      .about_me {
+        width: 70%;
+        margin: 0 auto 4rem auto;
       }
-
-      p {
-        margin: 1rem 0;
-      }
-
-      .btn.btn-primary {
-        display: block;
-        margin: 0 auto;
+  
+      .about_content {
+        .about_cards {
+          grid-template-columns: 1fr 1fr;
+        }
+  
+        .skill_fontend {
+          .skill_content {
+            grid-template-columns: 1fr 1fr;
+          }
+        }
+  
+        p {
+          margin: 1rem 0;
+        }
+  
+        .btn.btn-primary {
+          display: block;
+          margin: 0 auto;
+        }
       }
     }
   }

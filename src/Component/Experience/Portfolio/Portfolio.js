@@ -9,7 +9,7 @@ const portfolio_data = [
   {
     id: 1,
     image: JR,
-    title: 'Jira clone built with React - Project learning',
+    title: 'Jira clone built with React - Project demo',
     github: 'https://github.com/dhthinh7/Jira_clone',
     liveDemo: 'https://git-jira-clone.netlify.app',
     public: true
@@ -17,7 +17,7 @@ const portfolio_data = [
   {
     id: 2,
     image: BK,
-    title: 'Booking ticket for cinema - Personal project',
+    title: 'Booking ticket for cinema - Project demo',
     github: 'https://github.com/dhthinh7/booking_ticket_film',
     liveDemo: 'https://bookingticketfilm.netlify.app',
     public: true
@@ -25,7 +25,7 @@ const portfolio_data = [
   {
     id: 3,
     image: WC,
-    title: 'Manage WealCare - Work with client',
+    title: 'WealthCare - Freelancer',
     github: '/',
     liveDemo: '/',
     public: false

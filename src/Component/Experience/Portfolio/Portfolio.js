@@ -44,8 +44,8 @@ export default function Portfolio() {
           <div className="btn">Github</div>
           <div className="btn btn-primary">Live Demo</div>
         </div> : <div className="portfolio_item_ref">
-          <a href="https://github.com/dhthinh7/Jira_clone" target="_blank" rel="noreferrer" className="btn">Github</a>
-          <a href="https://git-jira-clone.netlify.app" target="_blank" rel="noreferrer" className="btn btn-primary">Live Demo</a>
+          <a href={item.github} target="_blank" rel="noreferrer" className="btn">Github</a>
+          <a href={item.liveDemo} target="_blank" rel="noreferrer" className="btn btn-primary">Live Demo</a>
         </div>}
       </article>
     })

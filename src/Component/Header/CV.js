@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { TbFileCertificate } from "react-icons/tb";
-import certificate from '../../Assets/CV/cybersoft.pdf';
+import certificate from '../../Assets/CV/react_cirtificate.pdf';
 import avatar from '../../Assets/images/avatar-removebg.png';
 
 

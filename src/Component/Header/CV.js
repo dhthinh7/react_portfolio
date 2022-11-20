@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { TbFileCertificate } from "react-icons/tb";
 import certificate from '../../Assets/CV/react_cirtificate.pdf';
-import avatar from '../../Assets/images/avatar-removebg.png';
+import avatar from '../../Assets/images/avatar_main.png';
 
 
 export default function CV() {
@@ -33,7 +33,7 @@ export default function CV() {
 
   const MouseOut = (e) => {
     e.target.style.background = '';
-    ref.current = setInterval(() => handleRotate(revert), 13)
+    ref.current = setInterval(() => handleRotate(revert), 13);
   }
   
   useEffect(() => {

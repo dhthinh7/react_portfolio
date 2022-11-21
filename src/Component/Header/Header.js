@@ -2,6 +2,8 @@ import React from "react";
 import CV from "./CV";
 import './Header.scss';
 import HeaderSocials from "./HeaderSocials";
+import { BsArrowRight } from "react-icons/bs";
+
 export default function Header() {
   return <>
     <header id="header">
@@ -12,6 +14,7 @@ export default function Header() {
           <h5 className="text-light">Fontend developer</h5>
           <p>Frontend Developer with high responsibility in development, producing Quality work.</p>
           <HeaderSocials />
+          <p className="direct">Click rotate circle to see detail my CV, FE certification</p>
         </div>
         <div className="header_cv">
           <CV />

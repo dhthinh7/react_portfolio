@@ -46,13 +46,13 @@ header {
         .cv-avatar {
           display: flex;
           justify-content: center;
-          background: linear-gradient(180deg, var(--color-primary), transparent);
+          background: linear-gradient(180deg, #324379, transparent);
           width: 100%;
           height: 100%;
           border-radius: 50%;
           overflow: hidden;
           position: relative;
-          box-shadow: inset 0 0 20px 0px;
+          box-shadow: inset 0 0 30px 0px var(--color-primary);
   
           img {
             position: absolute;
@@ -88,11 +88,19 @@ header {
             justify-content: center;
             align-items: center;
             box-shadow: inset 0 0 15px 0px;
+            span {
+              font-size: 1.7rem;
+            }
           }
   
-          .electron--certificate {
+          .electron--certificate1 {
             top: calc((var(--cv-width)/2) - (var(--cv-rotate-item-width)/2));
             left: calc(var(--cv-rotate-item-width) * (-1/2));
+          }
+
+          .electron--certificate2 {
+            top: calc(var(--cv-rotate-item-width) - 7.5rem);
+            left: calc(var(--cv-rotate-item-width) + var(--cv-rotate-item-width));
           }
         }  
       }

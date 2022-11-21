@@ -1,7 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { TbFileCertificate } from "react-icons/tb";
-import certificate from '../../Assets/CV/react_cirtificate.pdf';
-import avatar from '../../Assets/images/avatar_main.png';
+import myCV from '../../Assets/CV/thinhdoan-resume.pdf';
+import FE1 from '../../Assets/CV/FE1_Certificate.pdf';
+import FE2 from '../../Assets/CV/FE2_Certificate.pdf';
+import avatar from '../../Assets/images/avatar_main_no_bg.png';
 
 
 export default function CV() {
@@ -33,7 +35,7 @@ export default function CV() {
 
   const MouseOut = (e) => {
     e.target.style.background = '';
-    ref.current = setInterval(() => handleRotate(revert), 13);
+    ref.current = setInterval(() => handleRotate(revert), 20);
   }
   
   useEffect(() => {
@@ -47,8 +49,9 @@ export default function CV() {
       <img src={avatar} alt="avatar" />
     </div>
     <div className="cv" style={{ transform: `rotate(${deg}deg) translate(-50%, -50%)` }} onMouseOver={MouseOver} onMouseOut={MouseOut}>
-      <a href={certificate} className="btn cv-electron electron_active electron--cv" download>CV</a>
-      <a href={certificate} className="btn cv-electron electron_active electron--certificate" download><TbFileCertificate /></a>
+      <a href={myCV} className="btn cv-electron electron_active electron--cv" download>CV</a>
+      <a href={FE1}  className="btn cv-electron electron_active electron--certificate1" download><TbFileCertificate/><span>1</span></a>
+      <a href={FE2} className="btn cv-electron electron_active electron--certificate2" download><TbFileCertificate/><span>2</span></a>
     </div>
   </div>
 }

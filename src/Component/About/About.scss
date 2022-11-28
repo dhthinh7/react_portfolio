@@ -1,4 +1,5 @@
 @import '../../index.scss';
+
 .about-margin-top {
   margin-top: 0rem !important;
 
@@ -29,6 +30,7 @@
 
     .about_content {
       width: 100%;
+
       .about_cards {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -62,33 +64,80 @@
         }
       }
 
-      .skill_fontend  {
+      .skill_fontend,
+      .skill_softskill {
         @include section_item;
         margin-top: 1rem;
         padding: 1rem 3rem;
         margin-bottom: 1rem;
+
         .skill_content {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
+
           .skill_detail {
             display: flex;
             justify-content: start;
             align-items: center;
-  
+
             .skill_icon {
               padding-right: 1rem;
               color: white;
+
+              &.react {
+                svg {
+                  color: #48CAE9;
+                }
+              }
+
+              &.html {
+                color: #F2582C;
+              }
+
+              &.js {
+                color: #F4CC36;
+              }
+
+              &.css {
+                color: #1B72B9;
+              }
+
+              &.scss {
+                color: #D0639C;
+              }
+
+              &.tailwind,
+              &.ant-design {
+                color: #0CA5B5;
+              }
+
+              &.bootstrap {
+                color: #7044A5;
+              }
+
+              &.icon_svn {
+                img {
+                  width: 1rem;
+                  height: 1rem;
+                }
+              }
+
+              &.jira {
+                color: #0254D1;
+              }
+
             }
           }
         }
 
       }
+
       a {
         font-size: 1rem;
         font-weight: 500;
       }
     }
-    }
+  }
 }
 
 // Media device
@@ -97,12 +146,12 @@
     .about_container {
       grid-template-columns: 1fr;
       gap: 0;
-  
+
       .about_me {
         width: 50%;
         margin: 0 auto 4rem auto;
       }
-  
+
       .about_content {
         .btn.btn-primary {
           display: block;
@@ -120,22 +169,22 @@
         width: 70%;
         margin: 0 auto 4rem auto;
       }
-  
+
       .about_content {
         .about_cards {
           grid-template-columns: 1fr 1fr;
         }
-  
+
         .skill_fontend {
           .skill_content {
             grid-template-columns: 1fr 1fr;
           }
         }
-  
+
         p {
           margin: 1rem 0;
         }
-  
+
         .btn.btn-primary {
           display: block;
           margin: 0 auto;

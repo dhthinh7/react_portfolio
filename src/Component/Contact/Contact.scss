@@ -24,6 +24,10 @@
         .contact_item-icon {
           font-size: 1.5rem;
           color: var(--color-white);
+
+          &.messenger {
+            color: #007DF6;
+          }
         }
 
         a {

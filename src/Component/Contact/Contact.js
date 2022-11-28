@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import "./Contact.scss";
-import { AiTwotoneMail, AiFillMessage } from 'react-icons/ai';
+import { AiTwotoneMail } from 'react-icons/ai';
+import { BsMessenger } from 'react-icons/bs';
 import { SiZalo } from 'react-icons/si';
 import { notification } from 'antd';
 
@@ -33,13 +34,13 @@ export default function Contact() {
     <div className="container contact_container">
       <div className="contact_options">
         <article className="contact_item">
-          <div className="contact_item-icon"><AiTwotoneMail /></div>
+          <div className="contact_item-icon email"><AiTwotoneMail /></div>
           <h4>Email</h4>
           <h5>dhthinh7@gmail.com</h5>
           <a href="mailto:dhthinh7@gmail.com" target="_blank" rel="noreferrer">Send a message</a>
         </article>
         <article className="contact_item">
-          <div className="contact_item-icon"><AiFillMessage /></div>
+          <div className="contact_item-icon messenger"><BsMessenger /></div>
           <h4>Messenger</h4>
           <h5>Doan Hoang Thinh</h5>
           <a href="https://m.me/doanhoangthinh11" target="_blank" rel="noreferrer">Send a message</a>

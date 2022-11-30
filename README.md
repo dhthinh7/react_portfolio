@@ -1,4 +1,4 @@
-[Live Demo](https://portfoliotd.netlify.app/)
+[Live Demo](https://tdprofile.netlify.app/)
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

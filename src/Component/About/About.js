@@ -4,7 +4,7 @@ import { FaAward } from 'react-icons/fa';
 import { AiFillHtml5, AiFillGithub, AiOutlineAntDesign } from 'react-icons/ai';
 import { IoLogoCss3, IoLogoSass } from 'react-icons/io';
 import { TbBrandJavascript } from 'react-icons/tb';
-import { SiTailwindcss, SiBootstrap, SiJirasoftware } from 'react-icons/si';
+import { SiRedux, SiBootstrap, SiJirasoftware } from 'react-icons/si';
 import { DiResponsive } from 'react-icons/di';
 import { GrReactjs } from 'react-icons/gr';
 import avatar_me from '../../Assets/images/avatar.png';
@@ -38,7 +38,7 @@ export default function About() {
             </div>
           </article>
         </div>
-        <div className="skill_fontend">
+        <div className="skill_frontend">
           <h3>Developer</h3>
           <div className="skill_content">
             <article className="skill_detail">
@@ -68,6 +68,10 @@ export default function About() {
             <article className="skill_detail">
               <div className="skill_icon bootstrap"><SiBootstrap /></div>
               <h4>Bootstrap</h4>
+            </article>
+            <article className="skill_detail span_2">
+              <div className="skill_icon bootstrap"><SiRedux /></div>
+              <h4>Redux/Toolkit/Thunk/Saga</h4>
             </article>
             {/* <article className="skill_detail">
               <div className="skill_icon tailwind"><SiTailwindcss /></div>

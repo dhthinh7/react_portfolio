@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { TbFileCertificate } from "react-icons/tb";
-import myCV from '../../Assets/CV/thinhdoan-resume.pdf';
+import myCV from '../../Assets/CV/FrontendDev-thinhdoan-resume.pdf';
 import FE1 from '../../Assets/CV/FE1_Certificate.pdf';
 import FE2 from '../../Assets/CV/FE2_Certificate.pdf';
 import avatar from '../../Assets/images/avatar_main_no_bg.png';

@@ -64,7 +64,7 @@
         }
       }
 
-      .skill_fontend,
+      .skill_frontend,
       .skill_softskill {
         @include section_item;
         margin-top: 1rem;
@@ -74,11 +74,15 @@
         .skill_content {
           display: grid;
           grid-template-columns: 1fr 1fr 1fr;
-
+          
           .skill_detail {
             display: flex;
             justify-content: start;
             align-items: center;
+
+            &.span_2 {
+              grid-column: span 2;
+            }
 
             .skill_icon {
               padding-right: 1rem;
@@ -175,7 +179,7 @@
           grid-template-columns: 1fr 1fr;
         }
 
-        .skill_fontend {
+        .skill_frontend {
           .skill_content {
             grid-template-columns: 1fr 1fr;
           }

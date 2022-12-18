@@ -16,6 +16,17 @@
         overflow: hidden;
       }
 
+      p {
+        color: var(--color-primary);
+        margin: 0;
+      }
+
+      .account, .password {
+        span {
+          font-weight: 800;
+        }
+      }
+
       h3 {
         color: var(--color-white);
         margin: 1rem;
